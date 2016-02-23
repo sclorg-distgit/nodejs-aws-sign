@@ -4,7 +4,7 @@
 
 Name:       %{?scl_prefix}nodejs-aws-sign
 Version:    0.3.0
-Release:    2%{?dist}
+Release:    3%{?dist}
 Summary:    AWS signing for Node.js
 # Apache 2.0 License added upstream, will appear in next release
 # https://github.com/mikeal/aws-sign/blob/master/LICENSE
@@ -43,6 +43,9 @@ rm -rf %{buildroot}
 %{nodejs_sitelib}/aws-sign
 
 %changelog
+* Sun Feb 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.3.0-3
+- rebuilt
+
 * Thu Oct 17 2013 Tomas Hrcka <thrcka@redhat.com> - 0.3.0-2
 - replace provides and requires with macro
 
